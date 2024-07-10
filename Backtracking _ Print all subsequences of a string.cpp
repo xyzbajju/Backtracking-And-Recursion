@@ -35,7 +35,7 @@ void util(int ind, string s, int n, string f) {
         cout << f << endl;
         return;
     }
-    // we have passed f by value not by reference
+    // we have passed f by value not by reference, so no need to backtrack
     util(ind + 1, s, n, f + s[ind]); // include the current character
     util(ind + 1, s, n, f); // exclude the current character
 }
